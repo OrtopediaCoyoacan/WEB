@@ -166,3 +166,17 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .areas-photo .area-photo:focus-visible{outline:3px solid #475E67;outline-offset:4px}
 @media(max-width:680px){.areas-photo .area-photo{min-height:0}.area-photo-frame{height:215px}.area-photo-copy{padding:25px 27px 29px}}
 @media(prefers-reduced-motion:reduce){.areas-photo .area-photo{transition:none}.areas-photo .area-photo:hover{transform:none}}
+
+/* Encabezados de sección unificados, sin números. Etiqueta institucional discreta. */
+.section-head .section-tag,
+.section .section-tag,
+.band .section-tag,
+.dark .section-tag{
+  display:inline-block;width:max-content;max-width:100%;
+  background:#273D45;color:#FFFFFF;
+  padding:8px 13px;border-radius:3px;
+  font-size:.87rem;letter-spacing:.055em;line-height:1.45;
+  font-weight:700;text-transform:uppercase;
+}
+.dark .section-tag,.band .section-tag{background:#DDE3E3;color:#273D45}
+@media(max-width:680px){.section .section-tag,.band .section-tag,.dark .section-tag{font-size:.82rem}}
