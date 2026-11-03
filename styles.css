@@ -128,3 +128,26 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
  .patient-pathways .cards-four .card{transition:none}
  .patient-pathways .cards-four .card:hover{transform:none}
 }
+
+/* Imágenes editoriales para los cuatro motivos de consulta.
+   Los textos siguen siendo HTML accesible y las tarjetas siguen siendo enlaces. */
+.patient-pathways .cards-four .card::after{
+ content:"";position:absolute;top:0;right:0;bottom:0;width:45%;
+ background-repeat:no-repeat;background-size:cover;background-position:center;
+ -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 30%);
+ mask-image:linear-gradient(to right,transparent 0%,#000 30%);
+ pointer-events:none;opacity:.95;
+}
+.patient-pathways .cards-four .card:nth-child(1)::after{background-image:url("./hombro.webp");}
+.patient-pathways .cards-four .card:nth-child(2)::after{background-image:url("./rodilla.webp");}
+.patient-pathways .cards-four .card:nth-child(3)::after{background-image:url("./deportiva.webp");}
+.patient-pathways .cards-four .card:nth-child(4)::after{background-image:url("./diagnostico.webp");}
+.patient-pathways .cards-four .card > *{position:relative;z-index:1}
+.patient-pathways .cards-four .card h3,
+.patient-pathways .cards-four .card p{max-width:65%}
+.patient-pathways .cards-four .card .link{align-self:flex-start}
+@media(max-width:680px){
+ .patient-pathways .cards-four .card::after{width:36%;opacity:.35}
+ .patient-pathways .cards-four .card h3,
+ .patient-pathways .cards-four .card p{max-width:80%}
+}
