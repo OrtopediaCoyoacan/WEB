@@ -91,3 +91,40 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .portrait.portrait-photo{display:block;padding:0;overflow:hidden;background:#dce3e3}
 .portrait-photo img{display:block;width:100%;height:100%;min-height:615px;object-fit:cover;object-position:52% center}
 @media(max-width:680px){.portrait-photo img{height:390px;min-height:0;object-position:50% 35%}}
+
+/* Franja de motivos de consulta: menos rigidez, mismo contenido y paleta. */
+.patient-pathways{background:#F1F4F2}
+.patient-pathways .section-head{margin-bottom:36px}
+.patient-pathways .section-head h2{margin-bottom:16px}
+.patient-pathways .cards-four{gap:22px}
+.patient-pathways .cards-four .card{
+  position:relative;overflow:hidden;
+  min-height:255px;padding:34px 38px;
+  background:#FAFAF8;
+  border:1px solid #D9E1DF;border-radius:12px;
+  box-shadow:0 8px 24px rgba(39,61,69,.045);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.patient-pathways .cards-four .card::before{
+  content:"";position:absolute;inset:0 auto 0 0;width:5px;
+  background:#8B989C;opacity:.7;
+}
+.patient-pathways .cards-four .card:nth-child(2),
+.patient-pathways .cards-four .card:nth-child(3){background:#E9EEEE}
+.patient-pathways .cards-four .card h3{margin:19px 0 8px}
+.patient-pathways .cards-four .card .eyebrow{color:#475E67;letter-spacing:.035em}
+.patient-pathways .cards-four .card p{margin:0 0 18px}
+.patient-pathways .cards-four .card .link{font-weight:700;color:#273D45}
+.patient-pathways .cards-four .card:hover{
+  transform:translateY(-3px);border-color:#A8B9B9;
+  box-shadow:0 14px 30px rgba(39,61,69,.1);
+}
+.patient-pathways .cards-four .card:focus-visible{outline:3px solid #475E67;outline-offset:4px}
+@media(max-width:680px){
+ .patient-pathways .cards-four{gap:15px}
+ .patient-pathways .cards-four .card{min-height:0;padding:27px 27px 27px 31px}
+}
+@media(prefers-reduced-motion:reduce){
+ .patient-pathways .cards-four .card{transition:none}
+ .patient-pathways .cards-four .card:hover{transform:none}
+}
