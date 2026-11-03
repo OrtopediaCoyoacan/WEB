@@ -185,3 +185,23 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .doctor-portrait{padding:0;overflow:hidden;min-height:390px;display:block;background:#DDE3E3}
 .doctor-portrait img{display:block;width:100%;height:100%;min-height:390px;object-fit:cover;object-position:45% center}
 @media(max-width:680px){.doctor-portrait{min-height:250px;height:285px}.doctor-portrait img{min-height:0;height:100%;object-position:40% center}}
+
+/* Portada: artroscopia como bloque de especializacion clinica, seguido de atencion. */
+.arthroscopy-section{padding:92px 0}
+.arthroscopy-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:7%;align-items:center}
+.arthroscopy-photo{height:445px;overflow:hidden;background:#40565e}
+.arthroscopy-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 48%}
+.arthroscopy-copy h2{font-size:clamp(2rem,3vw,2.9rem);margin:19px 0 21px}
+.arthroscopy-copy p{max-width:57ch;line-height:1.75}
+.arthroscopy-copy .arthroscopy-note{border-top:1px solid #66818a;padding-top:20px;margin-top:23px;color:#d3dfe0;font-size:1rem}
+.approach-section{background:#ecf0ef}
+.approach-section .principle{border-top-color:#b9c8ca}
+.approach-section .principle p{color:#344d55}
+.approach-section .button{margin-top:12px}
+@media(max-width:680px){
+ .arthroscopy-section{padding:65px 0}
+ .arthroscopy-grid{grid-template-columns:1fr;gap:30px}
+ .arthroscopy-photo{height:330px}
+ .arthroscopy-copy h2{font-size:clamp(2rem,7vw,2.65rem)}
+ .approach-principles{margin-top:20px}
+}
