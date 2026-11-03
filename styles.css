@@ -93,7 +93,7 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 @media(max-width:680px){.portrait-photo img{height:390px;min-height:0;object-position:50% 35%}}
 
 /* Franja de motivos de consulta: menos rigidez, mismo contenido y paleta. */
-.patient-pathways{background:#F1F4F2}
+.patient-pathways{background:#FAFAF8}
 .patient-pathways .section-head{margin-bottom:36px}
 .patient-pathways .section-head h2{margin-bottom:16px}
 .patient-pathways .cards-four{gap:22px}
