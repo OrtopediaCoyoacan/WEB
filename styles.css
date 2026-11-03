@@ -69,3 +69,7 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .cards-four .card{min-height:270px}
 .cards-four .card:last-child{grid-column:auto}
 @media(max-width:680px){.cards-four{grid-template-columns:1fr}.cards-four .card{min-height:unset}}
+
+/* Ajuste puntual: titulares de páginas interiores, sin modificar portada ni otros textos. */
+.subhero h1{font-size:clamp(2.3rem,3.8vw,3.7rem);line-height:1.24}
+@media(max-width:680px){.subhero h1{font-size:clamp(2.15rem,7vw,2.75rem)}}
