@@ -1,0 +1,1 @@
+document.querySelectorAll('.menu').forEach(b=>b.addEventListener('click',()=>{const n=document.getElementById('menu');const opened=n.classList.toggle('open');b.setAttribute('aria-expanded',String(opened));b.setAttribute('aria-label',opened?'Cerrar menú':'Abrir menú')}));
