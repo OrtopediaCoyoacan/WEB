@@ -63,3 +63,9 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 /* Corrección: conservar la tipografía legible V2; reducir exclusivamente el título de portada. */
 .hero h1{font-size:clamp(2.45rem,4.25vw,4.1rem);line-height:1.2}
 @media(max-width:680px){.hero h1{font-size:clamp(2.3rem,7.4vw,2.75rem)}}
+
+/* Arquitectura editorial: cuatro rutas de acceso sin comprometer legibilidad */
+.cards-four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards-four .card{min-height:270px}
+.cards-four .card:last-child{grid-column:auto}
+@media(max-width:680px){.cards-four{grid-template-columns:1fr}.cards-four .card{min-height:unset}}
