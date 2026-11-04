@@ -342,3 +342,8 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .patient-pathways .cards-four .card h3{margin-bottom:20px}
 .patient-pathways .cards-four .card .link{margin-top:auto}
 @media(max-width:680px){.patient-pathways .cards-four .card{min-height:160px}}
+
+
+/* Entrada editorial, sin encabezado, a los accesos de consulta. */
+.patient-pathways-intro{max-width:900px;margin:0 0 38px;color:#273D45;font-size:clamp(1.18rem,1.7vw,1.48rem);line-height:1.65;font-weight:400}
+@media(max-width:680px){.patient-pathways-intro{margin-bottom:28px;font-size:1.16rem;line-height:1.7}}
