@@ -229,3 +229,29 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .patient-pathways{background:#FAFAF8}
 .approach-section{background:#FFFFFF}
 .arthroscopy-section{background:#ECF0EF}
+
+/* Cierre de portada: consulta con datos verificables y mapa integrado. */
+.contact-feature{padding:77px 0 82px}
+.contact-feature-heading{max-width:850px;margin-bottom:34px}
+.contact-feature-heading h2{max-width:20ch;font-size:clamp(2rem,3.1vw,3.1rem);margin:20px 0 18px}
+.contact-feature-heading p{max-width:70ch;margin:0;color:#e0e9e9}
+.contact-feature-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:25px;align-items:stretch}
+.contact-feature-booking,.contact-feature-location{border:1px solid #647b82;border-radius:9px;overflow:hidden}
+.contact-feature-booking{padding:30px;display:flex;flex-direction:column;align-items:flex-start;background:#2c454d}
+.contact-feature-booking h3,.contact-map-details h3{font-family:'DM Sans',Arial,sans-serif;font-size:1.26rem;line-height:1.4;letter-spacing:0;font-weight:700;margin:0 0 10px}
+.contact-feature-booking>p{color:#e0e9e9;margin:0 0 21px}
+.contact-feature-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.contact-feature-actions .button{font-size:1rem;padding:13px 17px}
+.contact-feature-call{background:transparent;color:white!important;border-color:#b5c8ca}
+.contact-feature-meta{width:100%;border-top:1px solid #6a8187;padding-top:17px;margin-top:auto}
+.contact-feature-meta p{margin:0 0 13px;line-height:1.5;overflow-wrap:anywhere}
+.contact-feature-meta strong{display:block;color:#d4e2e3;font-size:.86rem}
+.contact-feature-meta a{color:white;text-underline-offset:4px;font-size:1rem}
+.contact-feature-location{background:#f4f6f5;color:#273D45}
+.contact-map-frame{height:270px;background:#dce4e3}
+.contact-map-frame iframe{display:block;border:0;width:100%;height:100%}
+.contact-map-details{padding:22px 26px 25px}
+.contact-map-details p{color:#344d55;font-size:1rem;line-height:1.6;margin:0 0 15px}
+.contact-map-details a{font-size:1rem;font-weight:700;text-underline-offset:4px}
+@media(max-width:760px){.contact-feature{padding:63px 0}.contact-feature-grid{grid-template-columns:1fr}.contact-feature-heading h2{max-width:100%}.contact-feature-booking{padding:24px}.contact-map-frame{height:265px}}
+@media(max-width:420px){.contact-feature-actions,.contact-feature-actions .button{width:100%;text-align:center}}
