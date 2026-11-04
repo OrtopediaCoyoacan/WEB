@@ -324,3 +324,14 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .clinical-review-panel p{max-width:62ch;color:#344D55;margin:0 0 28px}
 .clinical-review-closing{border-top:1px solid #BCCACB;padding-top:19px;color:#475E67;font-weight:600}
 @media(max-width:680px){.clinical-review-hero{padding:55px 0}.clinical-review-section{padding:56px 0 72px}.clinical-review-panel h2{font-size:clamp(2rem,8vw,2.8rem)}}
+
+
+/* Encabezado de la pagina Consulta: texto y fotografia de revision de estudios. */
+.appointment-hero{padding:58px 0;background:#E8EEEE}
+.appointment-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(32px,5vw,75px);align-items:center}
+.appointment-hero-copy h1{font-size:clamp(2.2rem,3.15vw,3.45rem);line-height:1.21;margin:18px 0 22px;max-width:16ch}
+.appointment-hero-copy p{max-width:47ch;margin:0}
+.appointment-hero-photo{overflow:hidden;border-radius:5px;aspect-ratio:4 / 3;background:#dfe7e7}
+.appointment-hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-width:860px){.appointment-hero-grid{grid-template-columns:1fr;gap:28px}.appointment-hero{padding:50px 0}.appointment-hero-copy h1{max-width:22ch}.appointment-hero-photo{max-width:690px}}
+@media(max-width:680px){.appointment-hero{padding:42px 0 50px}.appointment-hero-copy h1{font-size:clamp(2rem,8vw,2.7rem)}.appointment-hero-photo{aspect-ratio:4 / 3}}
