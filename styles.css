@@ -313,3 +313,14 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .doctor-cv-note strong{display:block;font-size:1.18rem}
 .doctor-cv-note p{color:#475E67;margin:9px 0 0}
 @media(max-width:680px){.doctor-page-hero{padding:55px 0}.doctor-profile{padding:65px 0}.doctor-profile-grid{grid-template-columns:1fr;gap:30px}.doctor-profile-photo{aspect-ratio:1.4}.doctor-credentials{padding:65px 0}.doctor-cv-note{padding:22px}}
+
+/* Aviso editorial de revisión clínica, exclusivo de páginas Hombro y Rodilla. */
+.clinical-review-hero{padding:62px 0;background:#E8EEEE}
+.clinical-review-hero h1{margin:12px 0 14px}
+.clinical-review-hero p{margin:0;color:#344D55}
+.clinical-review-section{background:#FAFAF8;padding:76px 0 100px}
+.clinical-review-panel{background:#ECF0EF;border:1px solid #CAD5D6;border-radius:9px;padding:clamp(30px,5vw,62px);max-width:990px}
+.clinical-review-panel h2{max-width:17ch;font-size:clamp(2.15rem,4.2vw,3.8rem);margin:24px 0}
+.clinical-review-panel p{max-width:62ch;color:#344D55;margin:0 0 28px}
+.clinical-review-closing{border-top:1px solid #BCCACB;padding-top:19px;color:#475E67;font-weight:600}
+@media(max-width:680px){.clinical-review-hero{padding:55px 0}.clinical-review-section{padding:56px 0 72px}.clinical-review-panel h2{font-size:clamp(2rem,8vw,2.8rem)}}
