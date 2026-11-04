@@ -205,3 +205,8 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
  .arthroscopy-copy h2{font-size:clamp(2rem,7vw,2.65rem)}
  .approach-principles{margin-top:20px}
 }
+
+/* Artroscopia en el mismo gris verdoso claro de la seccion El medico. */
+.arthroscopy-section{background:#ecf0ef;color:#273D45}
+.arthroscopy-section .arthroscopy-copy p{color:#344d55}
+.arthroscopy-section .arthroscopy-copy .arthroscopy-note{color:#475E67;border-top-color:#b9c8ca}
