@@ -274,3 +274,9 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .footer .foot p{margin:5px 0 0;line-height:1.5}
 .footer .foot .fine{font-size:.85rem;line-height:1.45}
 @media(max-width:680px){.footer{padding:20px 0}.footer .foot{grid-template-columns:1fr;row-gap:14px}.footer .foot>div:last-child{text-align:left}}
+
+/* Firma tipografica en color invertido, exclusiva de la tarjeta de contacto. */
+.contact-signature{width:100%;max-width:430px;margin:0 0 27px;color:#FAFAF8}
+.contact-signature-name{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(1.18rem,1.7vw,1.62rem);line-height:1.38;letter-spacing:-.025em;font-weight:400;border-bottom:1px solid #A7B8BC;padding-bottom:8px}
+.contact-signature-specialty{font-family:'DM Sans',Arial,sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.075em;line-height:1.5;color:#DDE3E3;padding-top:7px}
+@media(max-width:680px){.contact-signature{max-width:100%;margin-bottom:23px}.contact-signature-name{font-size:clamp(1.06rem,4.7vw,1.4rem)}}
