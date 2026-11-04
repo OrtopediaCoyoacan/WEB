@@ -210,3 +210,17 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .arthroscopy-section{background:#ecf0ef;color:#273D45}
 .arthroscopy-section .arthroscopy-copy p{color:#344d55}
 .arthroscopy-section .arthroscopy-copy .arthroscopy-note{color:#475E67;border-top-color:#b9c8ca}
+
+/* Forma de atencion: escena de consulta y principios compactos, sin alterar otras secciones. */
+.approach-section{background:#ffffff}
+.approach-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:6%;align-items:center}
+.approach-content h2{font-size:clamp(2.05rem,3.1vw,3rem);line-height:1.24;margin:18px 0 18px}
+.approach-content>p{color:#344d55;max-width:53ch;margin:0 0 23px}
+.approach-highlights{border-top:1px solid #DDE3E3;margin:0 0 25px}
+.approach-highlight{display:flex;align-items:center;gap:13px;border-bottom:1px solid #DDE3E3;padding:11px 0;font-size:1rem;line-height:1.5}
+.approach-highlight span{display:grid;place-items:center;flex:0 0 27px;height:27px;border-radius:50%;background:#ECF0EF;color:#273D45;font-size:.92rem;font-weight:700}
+.approach-highlight strong{font-weight:600}
+.approach-photo{overflow:hidden;background:#ecf0ef;border-radius:8px;height:455px}
+.approach-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+@media(max-width:950px){.approach-layout{gap:4%}.approach-photo{height:390px}}
+@media(max-width:680px){.approach-layout{grid-template-columns:1fr;gap:30px}.approach-photo{height:auto;aspect-ratio:4/3}.approach-photo img{height:100%;object-fit:cover}.approach-content h2{font-size:clamp(2rem,7vw,2.65rem)}}
