@@ -335,3 +335,10 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .appointment-hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 @media(max-width:860px){.appointment-hero-grid{grid-template-columns:1fr;gap:28px}.appointment-hero{padding:50px 0}.appointment-hero-copy h1{max-width:22ch}.appointment-hero-photo{max-width:690px}}
 @media(max-width:680px){.appointment-hero{padding:42px 0 50px}.appointment-hero-copy h1{font-size:clamp(2rem,8vw,2.7rem)}.appointment-hero-photo{aspect-ratio:4 / 3}}
+
+
+/* Tarjetas de acceso directo a consulta: sin textos redundantes. */
+.patient-pathways .cards-four .card{min-height:205px}
+.patient-pathways .cards-four .card h3{margin-bottom:20px}
+.patient-pathways .cards-four .card .link{margin-top:auto}
+@media(max-width:680px){.patient-pathways .cards-four .card{min-height:160px}}
