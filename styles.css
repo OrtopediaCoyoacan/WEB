@@ -255,3 +255,9 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .contact-map-details a{font-size:1rem;font-weight:700;text-underline-offset:4px}
 @media(max-width:760px){.contact-feature{padding:63px 0}.contact-feature-grid{grid-template-columns:1fr}.contact-feature-heading h2{max-width:100%}.contact-feature-booking{padding:24px}.contact-map-frame{height:265px}}
 @media(max-width:420px){.contact-feature-actions,.contact-feature-actions .button{width:100%;text-align:center}}
+
+/* Encabezado de contacto centrado a lo ancho, sin competir con las tarjetas. */
+.contact-feature-heading{max-width:none;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:36px}
+.contact-feature-heading h2{max-width:none;width:100%;font-size:clamp(1.95rem,2.65vw,2.55rem);line-height:1.3;margin:17px 0 13px}
+.contact-feature-heading p{max-width:750px;margin:0 auto;color:#e0e9e9}
+@media(max-width:680px){.contact-feature-heading h2{font-size:clamp(1.85rem,6.2vw,2.2rem)}}
