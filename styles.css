@@ -266,3 +266,11 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .contact-feature-heading{align-items:flex-start;text-align:left;max-width:100%;margin-bottom:32px}
 .contact-feature-heading h2{width:100%;max-width:none;text-align:left;font-size:clamp(1.95rem,2.45vw,2.45rem);line-height:1.26;margin:17px 0 13px}
 .contact-feature-heading p{max-width:760px;margin:0;text-align:left}
+
+/* Ajustes puntuales: pie de pagina compacto, dos columnas conservadas. */
+.footer{padding:22px 0 20px}
+.footer .foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:32px;align-items:start}
+.footer .foot>div:last-child{text-align:right}
+.footer .foot p{margin:5px 0 0;line-height:1.5}
+.footer .foot .fine{font-size:.85rem;line-height:1.45}
+@media(max-width:680px){.footer{padding:20px 0}.footer .foot{grid-template-columns:1fr;row-gap:14px}.footer .foot>div:last-child{text-align:left}}
