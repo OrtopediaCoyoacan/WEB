@@ -194,7 +194,7 @@ a:not(.button):not(.cta):not(.card):not(.area):hover{text-underline-offset:4px}
 .arthroscopy-copy h2{font-size:clamp(2rem,3vw,2.9rem);margin:19px 0 21px}
 .arthroscopy-copy p{max-width:57ch;line-height:1.75}
 .arthroscopy-copy .arthroscopy-note{border-top:1px solid #66818a;padding-top:20px;margin-top:23px;color:#d3dfe0;font-size:1rem}
-.approach-section{background:#ecf0ef}
+.approach-section{background:#ffffff}
 .approach-section .principle{border-top-color:#b9c8ca}
 .approach-section .principle p{color:#344d55}
 .approach-section .button{margin-top:12px}
